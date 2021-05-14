@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "skyestudios.buildx"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0-beta"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures{
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    buildToolsVersion '30.0.0'
+}
+
+dependencies {
+    def nav_version = "2.3.0-alpha05"
+    def archLifecycle = "2.2.0"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'org.bouncycastle:bcprov-jdk16:1.46'
+    implementation 'com.madgag:scpkix-jdk15on:1.47.0.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation 'androidx.work:work-runtime:2.3.4'
+    implementation 'org.simpleframework:simple-xml:2.7.1'
+
+    implementation "androidx.lifecycle:lifecycle-runtime:$archLifecycle"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$archLifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$archLifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata:$archLifecycle"
+
+//    implementation 'com.android.tools:r8:1.5.68'
+
+    implementation files('libs/ecj.jar')
+    implementation files('libs/gson.jar')
+    implementation files('libs/jsoup.jar')
+
+
+
+
+
+
+}

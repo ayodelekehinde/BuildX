@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_shape"
+        android:layout_margin="@dimen/thirty"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:id="@+id/main_appBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:id="@+id/toolbar"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create new Project"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+         <androidx.appcompat.widget.AppCompatImageView
+             android:layout_width="@dimen/sixty"
+             android:layout_height="@dimen/sixty"
+             android:layout_margin="@dimen/ten"
+             app:srcCompat="@drawable/ic_round_android_24"
+             android:id="@+id/create_new_project_launcher"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="App icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="App name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/create_new_project_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textCapWords"
+                />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:text="package name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/create_new_project_package_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:inputType="textCapWords"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:text="Select a style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty"
+                    android:id="@+id/create_new_project_style"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/twenty"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/fifty"
+                            android:layout_height="@dimen/fifty"
+                            android:layout_gravity="center"
+                            android:background="@color/template_colorPrimary"
+                            android:id="@+id/create_new_project_color_primary"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:text="colorPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/fifty"
+                            android:layout_height="@dimen/fifty"
+                            android:layout_gravity="center"
+                            android:background="@color/template_colorPrimaryDark"
+                            android:id="@+id/create_new_project_color_primary_dark"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:text="colorPrimaryDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/fifty"
+                            android:layout_height="@dimen/fifty"
+                            android:layout_gravity="center"
+                            android:background="@color/template_colorAccent"
+                            android:id="@+id/create_new_project_color_accent"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:text="colorAccent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="@dimen/seventy"
+                        android:layout_height="@dimen/thirtyFive"
+                        android:text="Cancel"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginEnd="@dimen/five"
+                        android:id="@+id/btn_cancel"
+                        android:background="@drawable/button_outline"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="@dimen/seventy"
+                        android:layout_height="@dimen/thirtyFive"
+                        android:text="Create"
+                        android:textColor="@color/white"
+                        android:id="@+id/btn_create_new_project"
+                        android:background="@drawable/button_full"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

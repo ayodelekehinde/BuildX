@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:enabled="true"
+            android:textIsSelectable="true"
+            android:longClickable="true"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_margin="@dimen/ten"
+            android:id="@+id/compile_log"/>
+
+</ScrollView>

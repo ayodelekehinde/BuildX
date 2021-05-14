@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2DA574</color>
+    <color name="colorPrimaryDark">#2DA574</color>
+    <color name="colorAccent">#2DA574</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="blue_grey_900">#263238</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_50">#E3F2FD</color>
+    <color name="lime_100">#F0F4C3</color>
+    <color name="deep_purple_300">#9575CD</color>
+    <color name="red_50">#FFEBEE</color>
+
+    <color name="indigo_600">#bbbbbb</color>
+    <color name="red_600">#E53935</color>
+    <color name="red_A400">#FF1744</color>
+    <color name="deep_purple_A700">#6200EA</color>
+    <color name="brown_800">#4E342E</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="syntax_number">#f99157</color>
+    <color name="syntax_keyword">#7E57C2</color>
+    <color name="syntax_variable">#ef5350</color>
+    <color name="syntax_builtin">#66cccc</color>
+    <color name="syntax_comment">#a7adba</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="green_600">#43A047</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="trans_black">#4D0f0000</color>
+    <color name="trans_white">#A6f9fbfc</color>
+
+
+    <color name="template_colorPrimaryDark">#1A237E</color>
+    <color name="template_colorPrimary">#536DFE</color>
+    <color name="template_colorAccent">#FBC02D</color>
+
+    <color name="indigo_A200">#536DFE</color>
+</resources>

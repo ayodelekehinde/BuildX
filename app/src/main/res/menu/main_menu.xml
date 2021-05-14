@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item android:title="@string/project_settings"
+      android:id="@+id/menu_project_settings">
+  </item>
+  <item android:title="@string/project_libraries"
+      android:id="@+id/menu_project_libraries">
+  </item>
+
+  <item android:title="Release App"
+      android:id="@+id/menu_project_release">
+  </item>
+
+  <item android:title="Migrate to AndroidX(BETA)"
+    android:id="@+id/menu_migrate_androidx">
+</item>
+
+  <item android:title="Assistants"
+      android:id="@+id/menu_assistants">
+
+    <menu>
+     <item android:title="Firebase(BETA)"
+      android:id="@+id/sub_menu_firebase">
+  </item>
+    </menu>
+
+
+  </item>
+
+</menu>

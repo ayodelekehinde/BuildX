@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/base_layout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="@dimen/fifteen"
+        app:cardElevation="@dimen/five"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/grey_300"
+                android:layout_marginStart="@dimen/five"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:layout_margin="@dimen/ten"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingStart="9dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_300" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:tint="@color/black"
+                android:id="@+id/cancel_textview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/five"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/layout_empty_view"-->
+            <!--android:visibility="gone"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/oneseventy"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_height="@dimen/oneseventy"-->
+                <!--android:id="@+id/empty_list_img"-->
+                <!--android:src="@drawable/img_no_item"-->
+                <!--android:visibility="visible"/>-->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/empty_list"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="No Item"-->
+                <!--android:fontFamily="@font/asap"-->
+                <!--android:textSize="@dimen/text_eighteen"-->
+                <!--android:textColor="@color/grey_500"-->
+                <!--android:visibility="visible"/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/category_refresh">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_list">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

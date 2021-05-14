@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="skyestudios.buildx">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".BuildX"
+        >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4117203071441495~4747756349" />
+
+        <activity android:name="skyestudios.buildx.activities.StartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="skyestudios.buildx.layoutinflator.PreviewActivity" />
+        <activity android:name="skyestudios.buildx.activities.MainActivity" />
+        <activity android:name="skyestudios.buildx.activities.HomeActivity"
+            android:label=""/>
+        <activity android:name="skyestudios.buildx.activities.CodeViewActivity" />
+        <activity android:name=".activities.CompileLogActivity" />
+        <activity android:name=".keystorecreator.keystoreviews.KeystoreCreationActivity" />
+        <activity android:name=".activities.search.SearchLibActivity" />
+        <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".othereditor.NewCodeEditor"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service android:name="skyestudios.buildx.service.ApkMakerService"
+            />
+
+    </application>
+</manifest>

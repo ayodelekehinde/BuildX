@@ -1,0 +1,32 @@
+[
+    {
+      "style":"Theme.AppCompat.Light.NoActionBar"
+    },
+    {
+      "style": "Theme.AppCompat.Light"
+    },
+    {
+      "style": "Theme.MaterialComponents.NoActionBar"
+    },
+    {
+      "style": "Theme.AppCompat.DayNight"
+    },
+    {
+      "style": "Theme.AppCompat.DayNight.DarkActionBar"
+    },
+    {
+      "style": "Theme.MaterialComponents.Bridge"
+    },
+    {
+      "style": "Theme.MaterialComponents.DayNight"
+    },
+    {
+      "style": "Theme.MaterialComponents.Light.Bridge"
+    },
+    {
+      "style": "Theme.MaterialComponents.Light.NoActionBar"
+    },
+    {
+      "style": "Theme.MaterialComponents.DayNight.NoActionBar"
+    }
+]

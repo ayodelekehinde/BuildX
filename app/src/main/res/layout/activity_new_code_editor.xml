@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|start">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorAccent"
+            android:id="@+id/toolbar">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/codeview_back_button"
+            android:background="?selectableItemBackgroundBorderless"
+            android:tint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/file_name"
+            android:layout_weight="3"
+            android:text=""
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+
+        </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <skyestudios.buildx.othereditor.android.RoseEditor
+            android:id="@+id/mTextEditor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hor_scrollview"
+            android:fillViewport="true"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/symbolLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="="/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="/"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="{"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="("/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text=")"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="*"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="["/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="]"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="\\"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="|"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="$"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="!"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="&quot;"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

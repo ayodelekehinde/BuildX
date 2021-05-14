@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_libs_lin"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Project Libs"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text16"
+          android:layout_margin="@dimen/five"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="(10)"
+          android:id="@+id/libs_count"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text16"
+          android:layout_margin="@dimen/five"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/libs_list"
+        android:layout_below="@id/project_libs_lin"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/twenty"
+        android:tint="@color/white"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/colorAccent"
+        android:id="@+id/addNewLib"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_above="@id/addNewLib"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/thirty"
+        android:tint="@color/white"
+        app:fabSize="mini"
+        android:src="@drawable/ic_search_black_24dp"
+        app:backgroundTint="@color/red_600"
+        android:id="@+id/searchNewLib"/>
+  </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/home_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_slogan"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/thirty"
+            android:visibility="gone"
+            android:id="@+id/loading_progress"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:progressBackgroundTint="@color/white"
+                android:indeterminateTint="@color/white"
+                android:foregroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/text_status"
+                android:text="Initiating..."
+                android:fontFamily="sans-serif-light"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+                android:textSize="@dimen/text16"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Cherrio LLC."
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/ten"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</RelativeLayout>

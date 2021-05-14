@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:elevation="@dimen/five"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="?attr/colorPrimary">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/thirty"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_height="@dimen/thirty"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/post_detail_back_button"
+                android:tint="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/toolbar_title"
+                android:text="Add New Library"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+

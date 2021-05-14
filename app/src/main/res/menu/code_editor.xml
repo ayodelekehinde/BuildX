@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_undo"
+        android:orderInCategory="100"
+        android:title="undo"
+        android:icon="@drawable/ic_undo_selector"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:orderInCategory="200"
+        android:title="redo"
+        android:icon="@drawable/ic_redo_selector"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preview"
+        android:orderInCategory="300"
+        android:title="run"
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_run"-->
+        <!--android:orderInCategory="400"-->
+        <!--android:title="@string/action_run"-->
+        <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="500"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+
+
+</menu>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:id="@+id/main_appBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbar"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="BuildX"
+                    android:fontFamily="@font/quicksand"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/thirty"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="@dimen/forty"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        android:background="?selectableItemBackground"
+                        android:id="@+id/btn_build"
+                        android:tint="@color/white"/>
+
+                    <ProgressBar
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="@dimen/thirty"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/white"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/white"
+                        android:visibility="gone"
+                        android:id="@+id/build_progress"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            app:elevation="5dp"
+            android:layout_height="wrap_content"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+            app:tabBackground="@color/colorPrimary"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"
+            app:tabRippleColor="@color/white"
+            android:id="@+id/main_tab"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_below="@id/main_appBar"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ad_layout"
+        android:id="@+id/main_viewpager">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_layout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adView"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4117203071441495/1839264232"
+            >
+
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

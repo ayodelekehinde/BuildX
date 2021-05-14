@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">BuildX</string>
+    <string name="on_install">You built and installed an app using Buildity!</string>
+    <string name="fragment_view">Xml</string>
+    <string name="fragment_logic">Java</string>
+    <string name="views_relative">Relative Layout</string>
+    <string name="views_linear_horizontal">Linear Layout H</string>
+    <string name="views_linear_vertical">Linear Layout V</string>
+    <string name="views_edit_text">Edit Text</string>
+    <string name="views_text_vie">Text View</string>
+    <string name="views_image">ImageView</string>
+    <string name="views_progress">ProgressBar</string>
+    <string name="views_recycler">RecyclerView</string>
+    <string name="views_web">WebView</string>
+
+
+    //Builder
+    <string name="install_prompt">Install Prompt</string>
+    <string name="unknown_sources_title">
+        Allow Apk Installation
+    </string>
+    <string name="unknown_sources_text">
+        The only source for new apps that your device knows is your app store.  But this app
+        is going to build a app for you right here on your device.  To install
+        that new app, you need to tell your device to allow installation of apps from
+        unknown sources.
+        \n\nEnabling Unknown Sources does not allow apps to be installed without your
+        explicit case by case consent.  You will still be shown a list of special permissions
+        requested by an app and asked if you want to install it. You should always pay close attention
+        to the permissions list, especially if you\'re allowing unknown sources.
+        \n\nClicking "OK" will take you to the settings screen where you can check the box to
+        allow "Unknown Sources."
+    </string>
+    <string name="firebase_instructions">
+        1. Add your choice firebase library\n2. Add your google-services file to {project}/app/\n
+    </string>
+    <string name="installed">{{appName}} Installed</string>
+    <string name="open">Open</string>
+    <string name="done">Done</string>
+    <string name="retry_install">Installation failed.  Please do not navigate away from
+    install screen.</string>
+    <string name="retry">retry</string>
+    <string name="no_signed_apk">There is no apk to install.  Please try again.</string>
+    <string name="building_apk_title">Building Apk</string>
+    <string name="building_done">Done building {{appName}}</string>
+    <string name="building_failed">Failed to build {{appName}}</string>
+    <string name="tap_to_install">Tap here to install</string>
+    <string name="upack_aapt_failed">Failed to unpack aapt.
+        \n\nDid the developer forget to include it in the assets folder?</string>
+    <string name="upack_androidJar_failed">Failed to unpack android.jar.
+        \n\nDid the developer forget to include it in the assets folder?</string>
+    <string name="sign_failed">Failed to sign apk</string>
+    <string name="keystore">key</string>
+    <string name="project_settings">Project Settings</string>
+    <string name="project_libraries">Project Libraries</string>
+
+    <string name="terms_condition"> &lt;a href=https://cherrio-llc.github.io/BuildX/terms_and_conditions>Terms and Condition&lt;/a></string>
+    <string name="privacy_policy"> &lt;a href=https://cherrio-llc.github.io/BuildX/privacy_policy> Privacy Policy&lt;/a></string>
+    <string name="website"> &lt;a href=https://cherrio-llc.github.io/BuildX> Visit Website&lt;/a></string>
+
+    <string name="NewKeystoreIntroP1">
+        The following screens will guide you through the process of creating a new keystore, private-key, and self-signed
+        certificate that can be used to sign apps for publishing on Google Play.  To create a new key in an existing keystore,
+        return to the previous screen and long-press on a keystore entry, then select "Create Key" from the context menu.
+        </string>
+
+    <string name="NewKeystoreIntroP3">
+        Don\'t forget the password you choose for your key during this process.  Also, be sure to backup the keystore file.
+        If you ever forget the key password or lose the keystore file, you won\'t be able to publish updates to your apps.
+    </string>
+    <string name="NewKeystoreIntroP4">
+        The default values shown on the following screens will create a suitable key for signing apps.
+    </string>
+    <string name="NewKeystoreIntroTitle">Create New Keystore and Key</string>
+    <string name="keystore_password_label">Keystore Password</string>
+    <string name="verify_keystore_password_label">Verify Password</string>
+    <string name="KeyNameLabel">Key Name/Alias</string>
+    <string name="KeyPasswordLabel">Key Password</string>
+    <string name="VerifyPasswordLabel">Verify Password</string>
+    <string name="CancelButtonLabel">Cancel</string>
+    <string name="ContinueButtonLabel">Continue</string>
+    <string name="CertParametersTitle">Certificate Info</string>
+    <string name="CertValidityYearsLabel">Validity (years)</string>
+    <string name="CertSignatureAlgorithmLabel">Certificate Signature Algorithm</string>
+    <string name="DnInstructions">
+        Please fill in the following information to identify yourself and/or your company.
+        This information is contained in the public certificate paired with the key, and is included in the signatures
+        generated with this key.  You can put whatever you want in the following fields, and leave some blank if desired.
+    </string>
+    <string name="CommonNameLabel">Your Name</string>
+    <string name="OrganizationalUnitLabel">Department/Unit</string>
+    <string name="OrganizationLabel">Company/Organization</string>
+    <string name="StreetLabel">Street Address</string>
+    <string name="StateLabel">State/Province</string>
+    <string name="LocalityLabel">City/Locality</string>
+    <string name="CountryLabel">Country Code</string>
+    <string name="InvalidValidity">Invalid validity.</string>
+    <string name="InvalidValidityMessage">Please enter a positive decimal value.</string>
+    <string name="MissingCertInfoTitle">Missing Info</string>
+    <string name="MissingCertInfoMessage">Please fill out at least the \'Your Name\' field.</string>
+    <string name="ShortCertValidityTitle">Validity Warning</string>
+    <string name="ShortCertValidityMessage">Google recommends a certificate validity period of 25 years or more for signing Android apps.</string>
+    <string name="FinishButtonLabel">Finish</string>
+    <string name="OkButtonLabel">OK</string>
+    <string name="ContinueAnywayButtonLabel">Continue Anyway</string>
+    <string name="OverwriteKeystoreTitle">Overwrite File?</string>
+    <string name="OverwriteKeystoreFile">%s already exists.  Overwrite?</string>
+    <string name="PasswordsDontMatch">Passwords Don\'t Match</string>
+    <string name="PasswordRequired">Password Required</string>
+    <string name="KeyPasswordRequired">A key password is required.</string>
+    <string name="KeystorePasswordRequired">Keystore Password Required</string>
+    <string name="alias">Alias Required</string>
+    <string name="WrongKeystorePassword">Wrong Keystore Password</string>
+    <string name="NameConflictTitle">Key Name Conflict</string>
+    <string name="NameConflictMessage">An entry with name %s already exists in the keystore.</string>
+    <string name="CreatingKeyProgressMessage">Creating Keystore</string>
+    <string name="app_slogan">more flexibility, more freedom</string>
+    <string name="action_open">Open</string>
+    <string name="action_gotoline">Goto Line</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_run">Run</string>
+
+</resources>
