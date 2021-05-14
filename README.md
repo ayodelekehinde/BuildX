@@ -216,11 +216,7 @@ Project Link: [BuildX](https://github.com/Cherrio-LLC/BuildX)
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
 
-* []()
-* []()
-* []()
 
 
 
