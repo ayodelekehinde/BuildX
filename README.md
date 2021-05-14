@@ -127,7 +127,7 @@ A strong knowledge of Java and android build processes.
 ## Usage
 
 **For Advance users:** 
-check out this class in the project  [BuildTask](https://github.com/Cherrio-LLC/BuildX/blob/master/app/src/main/java/skyestudios/buildx/builderx/BuildTask.java) wich is responsible for
+check out this class in the project  [BuildTask](https://github.com/Cherrio-LLC/BuildX/blob/master/app/src/main/java/skyestudios/buildx/builderx/BuildTask.java) class which is responsible for
 progressively building the app. For example this is the entry point:
 
 ```
